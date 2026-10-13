@@ -138,7 +138,6 @@ public class HibernateManualApplication implements CommandLineRunner {
 
     private void findProductsWithCategories() {
         try (EntityManager entityManager = entityManagerFactory.createEntityManager()) {
-
             CriteriaBuilder criteriaBuilder = entityManager.getCriteriaBuilder();
             CriteriaQuery<Product> query = criteriaBuilder.createQuery(Product.class);
 
